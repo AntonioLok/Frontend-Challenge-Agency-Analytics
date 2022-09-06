@@ -44,7 +44,7 @@ class ContentSection extends React.Component <Props, State> {
     const forecastWeather: Partial<ForecastWeatherInterface> = {};
 
     nextFourDays.forEach((day, i) => {
-      // api returns 3 hours forcast. 8*3 = 24 hours = 1 day
+      // api returns 3 hours forecast. 8*3 = 24 hours = 1 day
       const index = (i + 1) * 8;
 
       forecastWeather[day] = {
